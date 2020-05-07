@@ -4,7 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>COVID-19 Visualized</title>
-
+    <meta name="viewport" content="device-width, initial-scale=0.5">
+    <script src="https://observablehq.com/@mbostock/scrubber"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -18,17 +19,20 @@
         <li data-target="#covid19Slides" data-slide-to="0" class="active"></li>
         <li data-target="#covid19Slides" data-slide-to="1"></li>
         <li data-target="#covid19Slides" data-slide-to="2"></li>
+        <li data-target="#covid19Slides" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img src="resources/img/final_from_jan_to_march.jpg" alt=""></img>
-          <img src="resources/img/final_2_from_april_to_may.jpg" alt=""></img>
+          <img class="tableau" src="resources/img/final_from_jan_to_march.jpg" alt=""></img>
         </div>
         <div class="item">
-          Image 2
+          <img class="tableau" src="resources/img/final_2_from_april_to_may.jpg" alt=""></img>
         </div>
         <div class="item">
           Image 3
+        </div>
+        <div class="item">
+          Image 4
         </div>
       </div>
       <a class="left carousel-control" href="#covid19Slides" data-slide="prev">
