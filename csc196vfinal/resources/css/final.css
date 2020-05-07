@@ -10,6 +10,18 @@ header {
   padding-bottom: 20px;
 }
 
+.observablehq-chart {
+  width: 36.25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.observablehq-viewof-dateSlider {
+  margin-left: 37.5%;
+  float: center;
+}
+
 .carousel-control {
   background-image: none !important;
 }
