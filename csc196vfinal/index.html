@@ -45,9 +45,19 @@
             });
           </script>
         </div>
-
         <div class="item">
-          Image 4
+          <div id="observablehq-6602fc2b">
+            <div class="observablehq-viewof-dateSlider"></div>
+            <div class="observablehq-chart"></div>
+          </div>
+          <script type="module">
+            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+            import define from "https://api.observablehq.com/@andrewtran1/covid-19-cases-around-the-world-work-in-progress.js?v=3";
+            (new Runtime).module(define, name => {
+              if (name === "viewof dateSlider") return Inspector.into("#observablehq-6602fc2b .observablehq-viewof-dateSlider")();
+              if (name === "chart") return Inspector.into("#observablehq-6602fc2b .observablehq-chart")();
+            });
+          </script>
         </div>
       </div>
       <a class="left carousel-control" href="#covid19Slides" data-slide="prev">
